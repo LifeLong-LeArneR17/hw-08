@@ -1,3 +1,5 @@
+import { throttle } from "lodash";
+
 const form = document.querySelector('.feedback-form');
 const userInfo = {};
 
@@ -26,6 +28,8 @@ const onContactFormSubmit = event => {
 
 form.addEventListener('input', onContactFormFieldChange)
 form.addEventListener('submit', onContactFormSubmit)
+form.addEventListener('input', throttle(onContactFormFieldChange, 500));
+
 
 
 

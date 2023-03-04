@@ -18,6 +18,7 @@
     "url": "https://github.com/LifeLong-LeArneR17/hw-08/settings/pages"
   },
   "dependencies": {
+    "@vimeo/player": "^2.18.0",
     "basiclightbox": "^5.0.4",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.12.1"
